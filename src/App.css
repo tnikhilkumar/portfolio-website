@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+.bg{
+  background-size: cover; /* Adjust the image size to cover the container */
+  background-position: center; /* Center the image within the container */
+}
+.navbar-light .navbar-nav .nav-link,
+.list-group-item a {
+  color: #aaa;
+}
+
+.navbar {
+  padding: 25px;
+}
+a.nav-link{
+  text-decoration: none;
+  color: blue;
+}
+
+a.nav-link:hover::after,
+a.nav-link:focus::after {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  color: white !important;
+}
+a.nav-link:hover,
+a.nav-link.hover:focus,
+a.nav-link:active {
+  color: #ffffff !important;
+}
+
+a.nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background: #00d0ff;
+  position: obsolute;
+  height: 2px;
+  bottom: -6px;
+  opacity: 0;
+  left: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+.project-link{
+  color: rgb(231, 226, 132);
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.project-link:hover{
+  color: rgb(0, 2, 0);
+  text-decoration: none;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+body {
+  background: #0e1516;
+  color: #aaa;
+  font-size: 1.25rem;
+}
+
+.fixed-top {
+  background-color: black;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  font-size: 4.5rem;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  padding: 0px 10%;
+}
+.home .name {
+  margin-top: 30px;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.home .name:hover::after,
+.home .name:focus::after {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  color: white !important;
+}
+
+.home .name::after {
+  content: "";
+  display: block;
+  width: 35%;
+  background: #00d0ff;
+  position: obsolute;
+  height: 2px;
+  bottom: -6px;
+  opacity: 0;
+  left: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.home font.font-name {
+  color: rgb(184, 244, 6);
+}
+
+.home font,
+.project font {
+  color: rgb(5, 247, 255);
+  font-size: 3.5 rem;
+}
+.projects,
+.services,
+.about,
+.contact {
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+}
+.about {
+  font-size: 1.5rem;
+  width: 58%;
+  margin: 100px auto;
+  text-align: center;
+}
+.contact {
+  width: 100%;
+  text-align: left;
+  margin: 100px auto 0;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-data {
+  border-left: 1px solid #dfdfdf;
+  padding-left: 40px;
+  display: block;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.content p {
+  text-align: justify;
+}
+
+.projects .wrapper,
+.services .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card {
+  background-color: transparent;
+  /* border: 1px solid white; */
+}
+
+
+.progress-bar-animate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #fafafa;
+  transform-origin: 0%;
+  z-index: 1050;
+}
+@media (max-width: 1000px) {
+  .home {
+    font-size: 3.5rem;
+  }
+  .home .name {
+    font-size: 5.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-data {
+    border-left: none;
+    margin: 30px 0px;
+    padding: 40px 0px 0px 0px;
+    border-top: 1px solid #fafafa;
+  }
+  .home {
+    font-size: 2.5rem;
+  }
+  .home .name {
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    margin: 100px auto;
+    width: 90%;
+  }
+  .home {
+    font-size: 2.5rem;
+  }
+  .home .name {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+.list-group-item {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.list-group-item:hover {
+  background-color: #000000;
+}
+.list-group-item a:hover,
+.list-group-item:hover a {
+  color: #fafafa;
+}
+.navbar-toggler {
+  background-color: #ffffff;
+}
